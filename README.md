@@ -51,8 +51,8 @@ Subscribe to get:
 
 ## 🚀 Live Demo
 
-**Visit:** https://noctirionvale.github.io/vaibes
-
+**Visit:**[ https://noctirionvale.github.io/vaibes
+](https://noctirionvale.github.io/vAIbes/)
 Try the comparison tool with questions like:
 - "How does AI actually work?"
 - "Should I be worried about AI?"
