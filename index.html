@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>vAIbes — Understanding AI Without Fear or Hype</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="main-wrapper">
+  <aside class="sidebar-label">
+    <span>ALL TIME AI POPULAR TOPICS</span>
+    <span>LAST WEEK DISCUSSIONS</span>
+    <span>TRENDING AI INNOVATION</span>
+  </aside>
+
+  <main class="content-center">
+    <div class="logo-container">
+      <img src="pointingai.png" alt="Logo" class="logo-image" />
+    </div>
+
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-visual">
+          <img src="hero.ai.png" alt="Hero Visual" />
+        </div>
+        <div class="hero-content">
+          <div class="site-title">vAIbes</div>
+          <div class="clear-explanations">CLEAR EXPLANATIONS FOR A CHANGING WORLD</div>
+          <div class="main-headline">Understanding</div>
+          <div class="sub-headline">
+            <span class="sub-headline-line1">AI Without Fear</span>
+            <span class="sub-headline-line2">or Hype</span>
+          </div>
+          <p class="hero-desc">The logic-smart space for adults who want clear technology explanations without the exaggeration.</p>
+          <a href="#ai-comparison" class="read-more-btn">Try AI Comparison</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="content" class="section-padding">
+      <div class="content-grid">
+        <div class="content-card">
+          <div class="card-title">WHAT IS AI?</div>
+          <p class="muted">A comprehensive guide to understanding AI from the ground up.</p>
+        </div>
+        <div class="content-card">
+          <div class="card-title">FEATURED TOPIC</div>
+          <p class="muted">Latest developments and trends in artificial intelligence.</p>
+        </div>
+        <div class="content-card">
+          <div class="card-title">POPULAR TOOLS</div>
+          <p class="muted">Discover the platforms shaping the future of technology.</p>
+        </div>
+      </div>
+
+      <!-- Tools Intro Section -->
+      <div class="tools-intro">
+        <h3>Below are tools you may find helpful</h3>
+        <p>You are free to use any of the tools below, depending on what you are trying to understand or verify.</p>
+        <p>You do not need to use all of them.</p>
+        <p>No single tool guarantees accuracy. Agreement across sources matters more than confidence.</p>
+        <p><strong>If answers differ, take a moment to compare sources and decide what makes sense to you.</strong></p>
+      </div>
+
+      <!-- Tools Section -->
+      <div id="tools-section" class="tools-section">
+        <div class="section-header">
+          <h2>Confused? Compare Sources.</h2>
+          <p>The best way to demystify AI is to interact with it. Here are commonly used global anchors:</p>
+        </div>
+
+        <!-- AI Assistants Category -->
+        <div class="tool-category">
+          <h3 class="category-title">AI Assistants (for explanations, ideas, and perspectives)</h3>
+          <div class="tool-grid">
+            <a href="https://grok.com" target="_blank" class="tool-card tool-grok">
+              <h4>Grok</h4>
+              <p>Alternative viewpoints and challenging assumptions</p>
+            </a>
+            <a href="https://chat.openai.com" target="_blank" class="tool-card tool-chatgpt">
+              <h4>ChatGPT</h4>
+              <p>General explanations and structured answers</p>
+            </a>
+            <a href="https://gemini.google.com" target="_blank" class="tool-card tool-gemini">
+              <h4>Gemini</h4>
+              <p>Broad knowledge and access to recent information</p>
+            </a>
+            <a href="https://chat.deepseek.com" target="_blank" class="tool-card tool-deepseek">
+              <h4>DeepSeek</h4>
+              <p>Technical and analytical responses</p>
+            </a>
+            <a href="https://claude.ai" target="_blank" class="tool-card tool-claude">
+              <h4>Claude</h4>
+              <p>Clear, thoughtful writing and summaries</p>
+            </a>
+            <a href="https://chat.qwen.ai" target="_blank" class="tool-card tool-qwen">
+              <h4>Qwen</h4>
+              <p>Multilingual reasoning and diverse perspectives</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Fact-Checking Category -->
+        <div class="tool-category">
+          <h3 class="category-title">Fact-Checking and Research</h3>
+          <div class="tool-grid">
+            <a href="https://www.perplexity.ai" target="_blank" class="tool-card tool-perplexity">
+              <h4>Perplexity</h4>
+              <p>Source-backed answers and live information</p>
+            </a>
+            <a href="https://www.google.com" target="_blank" class="tool-card tool-google">
+              <h4>Google</h4>
+              <p>Discovering additional sources and viewpoints</p>
+            </a>
+            <a href="https://www.wikipedia.org" target="_blank" class="tool-card tool-wiki">
+              <h4>Wikipedia</h4>
+              <p>Background knowledge and established facts</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW: AI Comparison Tool Section -->
+      <div id="ai-comparison" class="section-padding">
+        <div class="section-header">
+          <h2>AI Perspective Comparison</h2>
+          <p>Ask any question and see how different AI perspectives would answer it. No single answer is "correct" - understanding comes from comparing viewpoints.</p>
+        </div>
+
+        <!-- API Notice -->
+        <div class="api-notice">
+          💡 Demo Mode: Responses are simulated to show how the tool works. Contact for full API integration.
+        </div>
+
+        <!-- Input Section -->
+        <div class="ai-input-section">
+          <textarea 
+            id="question-input" 
+            placeholder="Ask anything... (e.g., 'How does AI actually work?' or 'Should I be worried about AI?')"
+          ></textarea>
+          <button id="submit-btn">Compare</button>
+        </div>
+
+        <!-- Error Box -->
+        <div id="error-box" class="ai-error-box"></div>
+
+        <!-- Email Capture -->
+        <div id="email-capture" class="ai-email-capture">
+          <h3>Want more insights like this?</h3>
+          <p>Get weekly AI comparisons and clarity tips</p>
+          <iframe 
+            data-tally-src="https://tally.so/r/ODX18A?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" 
+            loading="lazy" 
+            width="100%" 
+            height="150" 
+            frameborder="0" 
+            marginheight="0" 
+            marginwidth="0" 
+            title="Subscribe to vAIbes"
+            style="border-radius: 8px; background: transparent;"
+          ></iframe>
+        </div>
+
+        <!-- Loading Indicator -->
+        <div id="loading" class="ai-loading">
+          <p>🔄 Analyzing from different perspectives...</p>
+        </div>
+
+        <!-- Responses Grid -->
+        <div id="responses-grid" class="ai-responses-grid"></div>
+
+        <!-- CTA Footer -->
+        <div id="cta-footer" class="ai-cta-footer">
+          <h3>Still confused? That's okay.</h3>
+          <p>Understanding AI takes time. Join our community of late bloomers exploring technology together.</p>
+          <button id="ask-another">Ask Another Question</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-section">
+      <div>
+        <h4>About vAIbes</h4>
+        <p class="muted footer-text">Your trusted source for unbiased AI explanations.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#">Newsletter</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy</a></li>
+      </ul>
+    </footer>
+  </main>
+
+  <aside class="sidebar-label sidebar-right">
+    <span>POPULAR AI APPS</span>
+    <span>HOW FAR DO YOU UNDERSTAND?</span>
+    <span>WHAT'S NEXT?</span>
+  </aside>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
